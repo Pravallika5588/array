@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("task1");
+        
+        let arr=["gangotri","pushpa","surya","ala vaikuntapuram","july"]
+        for(i=0;i<arr.length;i++){
+            console.log("for loop",arr[i]);
+
+            }
+        for(i in arr){
+            console.log("for in",arr[i]);
+            
+        }
+        for(i of arr){
+            console.log("for of",arr[i]);
+            
+        }
+
+
+        console.log("task-2");
+        let arr1=[10,20,30,40,50]
+        console.log(arr1);
+        console.log("first element",arr1.shift());
+        console.log("last element",arr1.pop());
+        console.log("array",arr1);
+
+
+
+        console.log("task-3");
+        let arr3=[1,2,3,4,5,6];
+        let arr4=[];
+        console.log("array",arr3);
+
+        for(i=arr3.length;i>0;i--){
+            arr5=arr3.pop();
+            arr4.push(arr5);
+        }
+        console.log("reverse array",arr4);
+        
+
+
+        console.log("task-4");
+        let arr6= [12,3,5,6,22,56,29] 
+        let evensum=0
+        let oddsum=0
+         for(i=0;i<arr6.length;i++){
+            if(arr6[i]%2==0){
+             evensum+=arr6[i];
+            }
+            else{
+                oddsum+=arr6[i];
+            }
+             
+             
+        }
+        
+        console.log(evensum);
+        console.log(oddsum);
+
+
+
+
+
+
+       console.log("task-5");
+
+
+
+let f=["apple", "banana", "mango", "banana", 3, 4, 5, 6, true, {name: "object"}];
+        console.log(f);        
+        let string=[];
+        let number=[];
+        let boolean=[];
+        let object=[];
+        for(i=0;i<f.length;i++){
+            if(typeof f[i]==="string"){
+                string.push(f[i])
+            }         
+            else
+            if(typeof f[i]==="number") {
+                number.push(f[i]);
+            }  
+            else
+            if(typeof f[i]==="boolean"){
+                boolean.push(f[i]);
+            }
+            else
+            if(typeof f[i]==="object"){
+                object.push(f[i]);
+            }
+        }
+        console.log("str = ",string);
+        console.log("num = ",number);
+        console.log("bool =",boolean);
+        console.log("obj =",object[0]);
+</script>
+
+ <script>
+
+    console.log("Problem Solving")
+    console.log("Task-1")
+    console.log("printing of 10 to 1 numbers withnot using lessthan or greater than symbol")
+    for(i=10;!(i==0);i--){
+    console.log(i);
+    }
+    
+
+    console.log("Task-2")
+    console.log("printing -1 tp -10 numbers with not using > or < symbol")
+    for(j=-1;!(j==-10-1);j--){
+    console.log(j)
+    }
+
+    console.log("Task-3")
+    console.log("adding the numbers given in the string")
+    num = prompt("Enter any numbers")
+    // var inp=123;
+    // var num=String(inp)
+    var sum=0;
+    console.log ("The numbers in the given string is")
+    for(k=0;k < num.length;k++){
+    console.log(num[k])
+    sum=sum+Number(num[k])
+    }
+    console.log("The sum of the given numbers is  "+sum)
+
+</script>
+</body>
+</html>
